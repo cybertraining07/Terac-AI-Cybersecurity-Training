@@ -1,0 +1,107 @@
+{
+    "events_scanned": 7,
+    "total_findings": 8,
+    "severity_summary": {
+        "CRITICAL": 3,
+        "HIGH": 5,
+        "MEDIUM": 0,
+        "LOW": 0
+    },
+    "results": [
+        {
+            "event_id": "AI-001",
+            "event_type": "normal_request",
+            "findings_count": 0,
+            "findings": []
+        },
+        {
+            "event_id": "AI-002",
+            "event_type": "prompt_injection",
+            "findings_count": 1,
+            "findings": [
+                {
+                    "category": "Prompt Injection Activity",
+                    "severity": "HIGH",
+                    "description": "Potential prompt injection instructions detected.",
+                    "recommendation": "Validate user input and enforce instruction hierarchy."
+                }
+            ]
+        },
+        {
+            "event_id": "AI-003",
+            "event_type": "unauthorized_access",
+            "findings_count": 3,
+            "findings": [
+                {
+                    "category": "Unauthorized Access",
+                    "severity": "CRITICAL",
+                    "description": "An event indicates possible unauthorized access.",
+                    "recommendation": "Review access controls and investigate the event."
+                },
+                {
+                    "category": "Authentication Abuse",
+                    "severity": "HIGH",
+                    "description": "Multiple failed authentication attempts detected.",
+                    "recommendation": "Apply account protection, rate limits, and authentication monitoring."
+                },
+                {
+                    "category": "Sensitive Data Access",
+                    "severity": "CRITICAL",
+                    "description": "The event indicates sensitive data access.",
+                    "recommendation": "Review authorization, data access logs, and information protection controls."
+                }
+            ]
+        },
+        {
+            "event_id": "AI-004",
+            "event_type": "excessive_requests",
+            "findings_count": 1,
+            "findings": [
+                {
+                    "category": "Excessive Request Activity",
+                    "severity": "HIGH",
+                    "description": "Request volume exceeds the configured monitoring threshold.",
+                    "recommendation": "Apply request throttling and investigate unusual traffic."
+                }
+            ]
+        },
+        {
+            "event_id": "AI-005",
+            "event_type": "sensitive_data_exposure",
+            "findings_count": 2,
+            "findings": [
+                {
+                    "category": "Sensitive Data Access",
+                    "severity": "CRITICAL",
+                    "description": "The event indicates sensitive data access.",
+                    "recommendation": "Review authorization, data access logs, and information protection controls."
+                },
+                {
+                    "category": "Suspicious Activity Allowed",
+                    "severity": "HIGH",
+                    "description": "A suspicious event was marked as allowed.",
+                    "recommendation": "Review enforcement controls and investigate why the event was permitted."
+                }
+            ]
+        },
+        {
+            "event_id": "AI-006",
+            "event_type": "normal_request",
+            "findings_count": 0,
+            "findings": []
+        },
+        {
+            "event_id": "AI-007",
+            "event_type": "repeated_authentication_failure",
+            "findings_count": 1,
+            "findings": [
+                {
+                    "category": "Authentication Abuse",
+                    "severity": "HIGH",
+                    "description": "Multiple failed authentication attempts detected.",
+                    "recommendation": "Apply account protection, rate limits, and authentication monitoring."
+                }
+            ]
+        }
+    ]
+}
