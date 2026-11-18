@@ -1,53 +1,47 @@
-# Legal Information
+# Legal Information and Authorized Testing Scope
 
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
-sed diam voluptua. At vero eos et accusam et justo duo dolores et ea
-rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing
-elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna
-aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus
-est Lorem ipsum dolor sit amet.
+## Purpose
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
-eros et accumsan et iusto odio dignissim qui blandit praesent luptatum
-zzril delenit augue duis dolore te feugait nulla facilisi. Lorem ipsum
-dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh
-euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+This document describes the legal and ethical boundaries of the
+cryptographic security evaluation project in the Terac AI Cybersecurity
+Training portfolio.
 
-Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
-suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem
-vel eum iriure dolor in hendrerit in vulputate velit esse molestie
-consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
-accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
-delenit augue duis dolore te feugait nulla facilisi.
+## Testing Environment
 
-## Terms of Use
+The practical testing documented in this project was conducted for
+educational purposes using a local OWASP Juice Shop lab environment
+and supporting source-code analysis.
 
-Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
-doming id quod mazim placerat facer possim assum. Lorem ipsum dolor sit
-amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad
-minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis
-nisl ut aliquip ex ea commodo consequat.
+The project was designed to study cryptographic implementation,
+identify potential security weaknesses, and demonstrate secure
+cryptographic practices.
 
-Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse
-molestie consequat, vel illum dolore eu feugiat nulla facilisis.
+## Scope and Limitations
 
-At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd
-gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem
-ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, At
-accusam aliquyam diam diam dolore dolores duo eirmod eos erat, et nonumy
-sed tempor et et invidunt justo labore Stet clita ea et gubergren, kasd
-magna no rebum. sanctus sea sed takimata ut vero voluptua. est Lorem
-ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur
+Testing was limited to the local educational lab environment and
+the project files used for analysis.
+
+No claim is made that an external organization or production system
+authorized or participated in this exercise.
+
+The findings are educational observations from the tested environment.
+They should not be interpreted as confirmation of vulnerabilities
+in unrelated systems.
+
+## Responsible Use
+
+All security testing must be performed only:
+
+- On systems owned by the tester.
+- In intentionally vulnerable educational labs.
+- On systems for which explicit authorization has been obtained.
+
+Testing against third-party systems without permission is not permitted.
+
+## Disclosure
+
+This portfolio is intended for cybersecurity education, skills
+demonstration, and professional development.
+
+Any real-world security assessment must have documented authorization,
+a clearly defined scope, and appropriate rules of engagement.

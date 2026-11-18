@@ -79,7 +79,7 @@ The project includes:
 - Documentation and recommendations.
 - An integrated reporting engine.
 
-The final integrated platform passed all six of its unit tests. All ten module test suites were successfully executed during project development.
+All ten modules have been tested successfully, with 111 automated unit tests passing across the project. The integrated assessment platform passed all six of its dedicated tests.
 
 ## Repository Structure
 

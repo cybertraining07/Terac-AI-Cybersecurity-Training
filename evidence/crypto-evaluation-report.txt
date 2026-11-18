@@ -1,33 +1,63 @@
 CRYPTOGRAPHIC SECURITY EVALUATION
+REPORT RECONCILIATION
+
+Project:
+Terac AI Cybersecurity Training - Module 1
+
+Purpose:
+Document the historical scanner results and reconcile differences
+between report versions.
+
+HISTORICAL SCAN
+
+An earlier report recorded five pattern detections:
+
+- HIGH: RSA encryption without visible padding.
+- MEDIUM: MD5 or SHA-1 usage.
+- HIGH: Potential DES usage (three detections).
+
+The reported target was crypto_evaluator.py.
+
+These detections have not been independently confirmed as
+vulnerabilities. Because the target was the evaluator source itself,
+some results may represent matches against scanner rules or other
+source patterns.
+
+SUBSEQUENT GENERATED REPORT
+
+Date: 2026-11-17 20:34:52
 Files scanned: 1
-Findings: 5
+Total findings: 1
+Severity: HIGH
 
-[HIGH] RSA encryption without visible padding
-File: crypto_evaluator.py
-Line: 19
-Description: Legacy RSA encryption padding detected. Review whether this is used for encryption.
-Recommendation: Prefer RSA-OAEP for new encryption systems.
+Finding:
+RSA encryption without secure padding.
 
-[MEDIUM] Weak hash algorithm
-File: crypto_evaluator.py
-Line: 31
-Description: MD5 or SHA-1 usage detected.
-Recommendation: Use SHA-256 or a stronger suitable hash.
+Reported source:
+../../source-review/encrypt.py
 
-[HIGH] Potential DES usage
-File: crypto_evaluator.py
-Line: 35
-Description: DES usage detected.
-Recommendation: Use a modern encryption algorithm such as AES.
+Description:
+Possible textbook RSA encryption detected. Character-by-character
+RSA without randomized padding can leak patterns.
 
-[HIGH] Potential DES usage
-File: crypto_evaluator.py
-Line: 36
-Description: DES usage detected.
-Recommendation: Use a modern encryption algorithm such as AES.
+Recommendation:
+Use RSA-OAEP for RSA encryption, or authenticated hybrid encryption
+such as AES-GCM with RSA-OAEP.
 
-[HIGH] Potential DES usage
-File: crypto_evaluator.py
-Line: 38
-Description: DES usage detected.
-Recommendation: Use a modern encryption algorithm such as AES.
+REPRODUCIBILITY LIMITATION
+
+The reported source-review/encrypt.py file is not present in the
+current cleaned repository. Therefore, the subsequent scan cannot
+currently be reproduced from that source file.
+
+ASSESSMENT
+
+The ciphertext analysis provides separate evidence of repeated
+ciphertext patterns in the historical lab artifact.
+
+The scanner reports should be treated as historical educational
+analysis, not as independently verified findings from a current
+reproducible scan.
+
+No claim is made that all historical detections represent
+exploitable vulnerabilities.
