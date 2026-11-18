@@ -1,0 +1,40 @@
+{
+    "target": "http://127.0.0.1:3000",
+    "scan_time": "2026-11-18T02:32:08.549215+00:00",
+    "http_status": 200,
+    "headers_analyzed": 14,
+    "cookies_analyzed": 0,
+    "header_findings_count": 4,
+    "cookie_findings_count": 0,
+    "findings_count": 4,
+    "findings": [
+        {
+            "type": "HTTP Security Header",
+            "header": "Content-Security-Policy",
+            "severity": "HIGH",
+            "description": "Helps reduce cross-site scripting (XSS) risks.",
+            "recommendation": "Implement a restrictive Content-Security-Policy."
+        },
+        {
+            "type": "HTTP Security Header",
+            "header": "Strict-Transport-Security",
+            "severity": "HIGH",
+            "description": "Enforces HTTPS connections in supporting browsers.",
+            "recommendation": "Configure HSTS after confirming HTTPS is correctly deployed."
+        },
+        {
+            "type": "HTTP Security Header",
+            "header": "Referrer-Policy",
+            "severity": "LOW",
+            "description": "Controls how much referrer information browsers send.",
+            "recommendation": "Set a suitable Referrer-Policy, such as strict-origin-when-cross-origin."
+        },
+        {
+            "type": "HTTP Security Header",
+            "header": "Permissions-Policy",
+            "severity": "LOW",
+            "description": "Controls access to selected browser features.",
+            "recommendation": "Configure Permissions-Policy for the application's required features."
+        }
+    ]
+}
