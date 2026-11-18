@@ -1,0 +1,21 @@
+CRYPTOGRAPHIC SECURITY EVALUATION REPORT
+=============================================
+Date: 2026-11-17T20:34:52
+Files scanned: 1
+Total findings: 1
+
+SEVERITY SUMMARY
+------------------------------
+CRITICAL: 0
+HIGH: 1
+MEDIUM: 0
+LOW: 0
+
+DETAILED FINDINGS
+------------------------------
+File: ../../source-review/encrypt.py
+Line: 14
+Finding: RSA encryption without secure padding
+Severity: HIGH
+Description: Possible textbook RSA encryption detected. Character-by-character RSA without randomized padding can leak patterns.
+Recommendation: Use RSA-OAEP for RSA encryption, or use authenticated hybrid encryption such as AES-GCM with RSA-OAEP.

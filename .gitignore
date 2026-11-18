@@ -1,0 +1,39 @@
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# Environment variables and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Backup files
+*.backup
+*.bak
+*~
+
+# Temporary files
+*.tmp
+*.log
+
+# Operating system files
+.DS_Store
+Thumbs.db
+
+# Local lab artifacts - do not publish
+evidence/announcement_encrypted.md
+evidence/juice-shop-crash-log.txt
+source-review/encrypt.py
+
+# Raw local Nmap logs - retain locally
+evidence/juice-shop-scan.txt
+evidence/http-analysis.txt

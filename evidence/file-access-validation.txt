@@ -1,0 +1,22 @@
+OWASP Juice Shop - File Access Validation
+
+Target: http://127.0.0.1:3000
+
+Test 1: /ftp/coupons_2013.md.bak
+HTTP Status: 403 Forbidden
+Result: File extension rejected.
+
+Test 2: /ftp/package.json.bak
+HTTP Status: 403 Forbidden
+Result: File extension rejected.
+
+Observed validation message:
+Only .md and .pdf files are allowed!
+
+Additional observation:
+Error response exposed internal application file paths
+and stack-trace information.
+
+Assessment:
+Backup file retrieval blocked through these requests.
+Verbose error disclosure observed.

@@ -1,0 +1,30 @@
+OWASP Juice Shop - Ciphertext Analysis
+
+Target:
+ /ftp/announcement_encrypted.md
+
+Encryption implementation:
+ RSA modular exponentiation, character by character.
+
+Source operation:
+ pow(ord(char), e, N)
+
+Public exponent:
+ 65537
+
+Analysis results:
+ Total ciphertext values: 1194
+ Unique ciphertext values: 43
+
+Observation:
+ Repeated ciphertext values occur throughout the document.
+ This is consistent with deterministic character-by-character
+ RSA encryption without randomized padding.
+
+Security implication:
+ Repeated plaintext characters produce repeated ciphertext
+ values, exposing frequency and structural information.
+
+Assessment:
+ Insecure cryptographic design observed.
+ Plaintext recovery and private-key exposure not established.

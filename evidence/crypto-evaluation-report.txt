@@ -1,0 +1,33 @@
+CRYPTOGRAPHIC SECURITY EVALUATION
+Files scanned: 1
+Findings: 5
+
+[HIGH] RSA encryption without visible padding
+File: crypto_evaluator.py
+Line: 19
+Description: Legacy RSA encryption padding detected. Review whether this is used for encryption.
+Recommendation: Prefer RSA-OAEP for new encryption systems.
+
+[MEDIUM] Weak hash algorithm
+File: crypto_evaluator.py
+Line: 31
+Description: MD5 or SHA-1 usage detected.
+Recommendation: Use SHA-256 or a stronger suitable hash.
+
+[HIGH] Potential DES usage
+File: crypto_evaluator.py
+Line: 35
+Description: DES usage detected.
+Recommendation: Use a modern encryption algorithm such as AES.
+
+[HIGH] Potential DES usage
+File: crypto_evaluator.py
+Line: 36
+Description: DES usage detected.
+Recommendation: Use a modern encryption algorithm such as AES.
+
+[HIGH] Potential DES usage
+File: crypto_evaluator.py
+Line: 38
+Description: DES usage detected.
+Recommendation: Use a modern encryption algorithm such as AES.

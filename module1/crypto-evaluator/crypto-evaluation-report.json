@@ -1,0 +1,22 @@
+{
+    "project": "Cryptographic Security Evaluator",
+    "generated_at": "2026-11-17T20:34:52",
+    "files_scanned": 1,
+    "total_findings": 1,
+    "severity_summary": {
+        "CRITICAL": 0,
+        "HIGH": 1,
+        "MEDIUM": 0,
+        "LOW": 0
+    },
+    "findings": [
+        {
+            "file": "../../source-review/encrypt.py",
+            "line": 14,
+            "name": "RSA encryption without secure padding",
+            "severity": "HIGH",
+            "description": "Possible textbook RSA encryption detected. Character-by-character RSA without randomized padding can leak patterns.",
+            "recommendation": "Use RSA-OAEP for RSA encryption, or use authenticated hybrid encryption such as AES-GCM with RSA-OAEP."
+        }
+    ]
+}
