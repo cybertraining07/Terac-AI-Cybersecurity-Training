@@ -1,0 +1,90 @@
+{
+    "tool": "RAG Security and Data Leakage Evaluator",
+    "assessment_type": "Simulated Rule-Based Assessment",
+    "documents_scanned": 7,
+    "total_findings": 6,
+    "severity_summary": {
+        "CRITICAL": 1,
+        "HIGH": 4,
+        "MEDIUM": 1,
+        "LOW": 0
+    },
+    "results": [
+        {
+            "document_id": "RAG-001",
+            "findings_count": 0,
+            "findings": []
+        },
+        {
+            "document_id": "RAG-002",
+            "findings_count": 1,
+            "findings": [
+                {
+                    "category": "Document-Based Prompt Injection",
+                    "severity": "HIGH",
+                    "description": "The document contains instructions that may attempt to manipulate the RAG system.",
+                    "recommendation": "Treat retrieved documents as untrusted data. Separate document content from system instructions."
+                }
+            ]
+        },
+        {
+            "document_id": "RAG-003",
+            "findings_count": 2,
+            "findings": [
+                {
+                    "category": "Sensitive Information Exposure",
+                    "severity": "HIGH",
+                    "description": "Potential sensitive information detected: Email address.",
+                    "recommendation": "Review document access permissions and redact sensitive information when it is not required."
+                },
+                {
+                    "category": "Sensitive Information Exposure",
+                    "severity": "HIGH",
+                    "description": "Potential sensitive information detected: Possible password disclosure.",
+                    "recommendation": "Review document access permissions and redact sensitive information when it is not required."
+                }
+            ]
+        },
+        {
+            "document_id": "RAG-004",
+            "findings_count": 1,
+            "findings": [
+                {
+                    "category": "Unauthorized Document Retrieval",
+                    "severity": "CRITICAL",
+                    "description": "A restricted document appears to have been retrieved by a user without the required role.",
+                    "recommendation": "Enforce authorization checks before retrieval and filter documents by user permissions."
+                }
+            ]
+        },
+        {
+            "document_id": "RAG-005",
+            "findings_count": 1,
+            "findings": [
+                {
+                    "category": "Potential Data Poisoning",
+                    "severity": "MEDIUM",
+                    "description": "The document contains suspicious instructions or content that may undermine source reliability.",
+                    "recommendation": "Validate document provenance, review changes, and compare content against trusted sources."
+                }
+            ]
+        },
+        {
+            "document_id": "RAG-006",
+            "findings_count": 0,
+            "findings": []
+        },
+        {
+            "document_id": "RAG-007",
+            "findings_count": 1,
+            "findings": [
+                {
+                    "category": "Document-Based Prompt Injection",
+                    "severity": "HIGH",
+                    "description": "The document contains instructions that may attempt to manipulate the RAG system.",
+                    "recommendation": "Treat retrieved documents as untrusted data. Separate document content from system instructions."
+                }
+            ]
+        }
+    ]
+}
