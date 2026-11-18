@@ -180,6 +180,16 @@ The AI security evaluators use predefined rules and simulated scenarios. They do
 
 Any real-world security testing must be performed with appropriate authorization and within an agreed scope.
 
+## Project Evidence
+
+The following screenshots demonstrate the Module 10 integrated assessment and automated test execution.
+
+### Integrated Security Assessment
+![Module 10 Integrated Assessment](screenshots/module10-integrated-assessment.png)
+
+### Automated Test Results
+![Module 10 Tests Passed](screenshots/module10-tests-passed.png)
+
 ## Project Status
 
 **Completed — 10 Modules**
